@@ -4,7 +4,7 @@
 <img src="src/helper/images/logo_upla.svg" alt="Imagen go" width="200" />
 
 <font size="5">
-Aplicación encargada de realizar de crear los recursos que van hacer usados desde la app movil.
+Aplicación encargada de crear los recursos que van hacer usados desde la app movil.
 </font>
 
 ## Iniciar
@@ -14,11 +14,11 @@ Esta proyecto esta echo en golang.
 
 Algunos recursos para iniciar con este proyecto puedes ver en:
 
-- [Go](https://go.dev/) Go en un lenguaje de programación concurrente y compilado con tipado estático.
-- [Docker](https://www.docker.com/) Docker es la tecnología en contenedores que permite crear y usar imagenes para desplegar aplicación.
-- [Visual Studio](https://code.visualstudio.com/) Editor de código para todos tipos de lenguaje de programación.
-- [Git](https://git-scm.com/) Software de control de versiones.
-- [Git Hub](https://github.com/) Plataforma de alojamiento de proyecto de todo ámbito.
+- [Go](https://go.dev/) Es un lenguaje de programación concurrente y compilado con tipado estático.
+- [Docker](https://www.docker.com/) Es la tecnología en contenedores que permite crear y usar imagenes para desplegar aplicación.
+- [Visual Studio](https://code.visualstudio.com/) Es un editor de código para todos tipos de lenguaje de programación.
+- [Git](https://git-scm.com/) Es un Software de control de versiones.
+- [Git Hub](https://github.com/) Es una Plataforma de alojamiento de proyecto de todo ámbito.
 
 ## Instalación
 
