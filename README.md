@@ -1,24 +1,21 @@
 # SERVICIO APP MOVIL UPLA
 
-<!-- ![IMAGES DE GO LANG](images/ladder.svg) -->
 <img src="src/helper/images/logo_upla.svg" alt="Imagen go" width="200" />
 
-<font size="5">
-Aplicación encargada de crear los recursos que van hacer usados desde la app movil.
-</font>
+**Aplicación encargada de crear los recursos que serán utilizados desde la app móvil.**
 
-## Iniciar
+## Inicio
 
-Esta proyecto esta echo en golang.
+Este proyecto está desarrollado en Go.
 <img src="src/helper/images/ladder.svg" alt="Imagen go" width="50" />
 
-Algunos recursos para iniciar con este proyecto puedes ver en:
+A continuación, se mencionan algunos recursos necesarios para iniciar con este proyecto:
 
-- [Go](https://go.dev/) Es un lenguaje de programación concurrente y compilado con tipado estático.
-- [Docker](https://www.docker.com/) Es la tecnología en contenedores que permite crear y usar imagenes para desplegar aplicación.
-- [Visual Studio](https://code.visualstudio.com/) Es un editor de código para todos tipos de lenguaje de programación.
-- [Git](https://git-scm.com/) Es un Software de control de versiones.
-- [Git Hub](https://github.com/) Es una Plataforma de alojamiento de proyecto de todo ámbito.
+- [Go](https://go.dev/): Lenguaje de programación concurrente y compilado con tipado estático.
+- [Docker](https://www.docker.com/): Tecnología de contenedores que permite crear y utilizar imágenes para el despliegue de aplicaciones.
+- [Visual Studio Code](https://code.visualstudio.com/): Editor de código para diversos lenguajes de programación.
+- [Git](https://git-scm.com/): Sistema de control de versiones.
+- [GitHub](https://github.com/): Plataforma de alojamiento de proyectos.
 
 ## Instalación
 
@@ -145,3 +142,15 @@ Siga los pasos para iniciar el desarrollo:
 
         // Comando que envía los cambios al repositorio remoto.
         git push origin master
+
+8. Para realizar el despliegue en contenedores, asegúrese de tener en cuenta los siguientes puntos:
+
+   - Ejecute el siguiente comando en su servidor Linux para iniciar el despliegue:
+   
+     ```shell
+     sh run.sh
+     ```
+
+   - Asegúrese de utilizar el nombre de imagen `servicio-app-movil` para el contenedor.
+
+   - El servicio estará disponible en el puerto externo 8892.
