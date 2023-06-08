@@ -1,7 +1,7 @@
 package model
 
 type DatosFicha struct {
-	Codigo             string `json:"cod,omitempty"`
+	Codigo             string `json:"codido,omitempty"`
 	ApellidoPaterno    string `json:"apellidoPaterno,omitempty"`
 	ApellidoMaterno    string `json:"apellidoMaterno,omitempty"`
 	Nombres            string `json:"nombres,omitempty"`
