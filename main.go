@@ -59,9 +59,14 @@ func main() {
 	})
 
 	// Rutas
+
 	// Define una ruta GET para obtener los datos de un estudiante dado su código
 	// Ejemplo de uso: /obtenerdatos/A87560E
 	router.GET("/obtenerdatos/:codigo", controller.ObtenerDatosEstudiante)
+
+	// Define una ruta GET para obtener los datos de su grado académico
+	// Ejemplo de uso: /obtenerdatos/A87560E
+	router.GET("/progresoacademico/:codigo", controller.ObtenerProgresoAcademico)
 
 	// Iniciar el servidor
 	router.Run(go_port)

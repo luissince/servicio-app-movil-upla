@@ -1,20 +1,20 @@
 package model
 
 type DatosFicha struct {
-	Cod    string `json:"cod,omitempty"`
-	ApPat  string `json:"ap_pat,omitempty"`
-	ApMat  string `json:"ap_mat,omitempty"`
-	Nom    string `json:"nom,omitempty"`
-	FNac   string `json:"f_nac,omitempty"`
-	Tel    string `json:"tel,omitempty"`
-	Cel    string `json:"cel,omitempty"`
-	Mail   string `json:"mail,omitempty"`
-	FIng   string `json:"f_ing,omitempty"`
-	Fac    string `json:"fac,omitempty"`
-	Carr   string `json:"carr,omitempty"`
-	ModAcd string `json:"mod_acd,omitempty"`
-	Dir    string `json:"dir,omitempty"`
-	ECiv   string `json:"e_civ,omitempty"`
-	Dni    string `json:"dni,omitempty"`
-	Edad   string `json:"edad,omitempty"`
+	Codigo             string `json:"cod,omitempty"`
+	ApellidoPaterno    string `json:"apellidoPaterno,omitempty"`
+	ApellidoMaterno    string `json:"apellidoMaterno,omitempty"`
+	Nombres            string `json:"nombres,omitempty"`
+	FechaNacimiento    string `json:"fechaNacimiento,omitempty"`
+	Telefono           string `json:"telefono,omitempty"`
+	Celular            string `json:"celular,omitempty"`
+	Mail               string `json:"mail,omitempty"`
+	FechaIngreso       string `json:"fechaIngreso,omitempty"`
+	Facultad           string `json:"facultad,omitempty"`
+	Carrera            string `json:"carrera,omitempty"`
+	ModalidadAcademico string `json:"modalidadAcademico,omitempty"`
+	Direccion          string `json:"direccion,omitempty"`
+	EstadoCivil        string `json:"estadoCivil,omitempty"`
+	Dni                string `json:"dni,omitempty"`
+	Edad               string `json:"edad,omitempty"`
 }
