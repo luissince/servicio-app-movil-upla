@@ -41,3 +41,20 @@ func ObtenerProgresoAcademico(c *gin.Context) {
 
 	c.IndentedJSON(http.StatusOK, progresoAcademico)
 }
+
+func ObtenerWifi(c *gin.Context) {
+	// Obtener el idConsulta de la URL
+	codigo := c.Param("codigo")
+	if codigo == "" {
+		c.IndentedJSON(http.StatusBadRequest, gin.H{"message": "No se pudo procesar el parametro de la URL."})
+		return
+	}
+
+	wifi, rpta := service.ObtenerWifi(codigo)
+	if rpta != "ok" {
+		c.IndentedJSON(http.StatusBadRequest, model.Error{Message: rpta})
+		return
+	}
+
+	c.IndentedJSON(http.StatusOK, wifi)
+}

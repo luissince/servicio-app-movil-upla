@@ -65,3 +65,32 @@ func ObtenerProgresoAcademico(codigo string) ([]model.ProgresoAcademico, string)
 
 	return progresoAcademicos, "ok"
 }
+
+func ObtenerWifi(codigo string) (model.Wifi, string) {
+	wifi := model.Wifi{}
+
+	// Crear conexión a la base de datos
+	db, err := database.CreateConnection()
+	if err != nil {
+		return wifi, "No se puedo establecer una conexión."
+	}
+	defer db.Close()
+
+	// Consulta SQL
+	declarar := "DECLARE @xml xml='<Alumno><codigo>%s</codigo></Alumno>';"
+	procedimiento := "EXEC [Alumno].[ObtenerWifiPorCodigo] @xml"
+	query := fmt.Sprintf(declarar+procedimiento, codigo)
+
+	// Ejecutar la consulta y escanear los resultados en el modelo
+	row := db.QueryRow(query)
+	err = helper.ScanRow(row, &wifi)
+	if err == sql.ErrNoRows {
+		return wifi, "No tiene credenciales del WIFI, comuníquese con su área de informática."
+	}
+
+	if err != nil {
+		return wifi, "No se puedo obtener los datos de la consulta."
+	}
+
+	return wifi, "ok"
+}
